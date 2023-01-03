@@ -20,3 +20,18 @@ cars=["bmw","tesla","nano","swift desire"]
 newlist=[x for x in cars if x!="Tata"]
 #output You want then loop then condition
 print(newlist) #print in form of list
+
+
+
+l=[1,2,3]
+if len(l)>0:
+    print("Not Empty")
+else:
+    print("Empty")
+    
+    # OR
+l1=[1,2,3]
+if l1:
+    print("Not Empty")
+else:
+    print("Empty")
