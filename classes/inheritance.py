@@ -1,3 +1,5 @@
+# INHERITANCE - use classes in different classes to avoid repetition
+
 class A:  # A- Parent class
     def __init__(self):
         print("Init of Class A")
