@@ -1,0 +1,11 @@
+def movezeroes(arr):
+    count=0
+    for a in arr:
+        if a==0:
+            arr.remove(0)
+            count+=1
+    print(count)
+    for i in range(0,count):
+        arr.append(0)
+    return arr
+print(movezeroes([12,34,0,54,43,0,34,0]))

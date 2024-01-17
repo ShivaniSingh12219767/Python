@@ -1,0 +1,18 @@
+def tsum(lst1,lst2):
+    a=0
+    b=0
+    sum=0
+    ls=[]
+    for i in lst1:
+        a=a*10+i
+    for i in lst2:
+        b=b*10+i
+    sum=a+b
+    while sum>0:
+        c=sum%10
+        ls.append(c)
+        sum=sum//10
+    return ls
+l1 = [9,9,9,9,9,9,9]
+l2 = [9,9,9,9]
+print(tsum(l1,l2))

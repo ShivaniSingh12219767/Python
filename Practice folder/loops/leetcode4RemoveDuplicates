@@ -1,0 +1,15 @@
+class Solution:
+    def removeDuplicates(self, nums):
+        exnums=[]
+        for a in range (len(nums)):
+            if nums[a]  in exnums:
+                continue
+            else:
+                exnums.append(nums[a])
+        c=len(exnums)
+        print(exnums)
+        return c
+obj1=Solution()
+print(obj1.removeDuplicates([1,1,2]))
+
+

@@ -1,0 +1,18 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        temp=x
+        sum=0
+        r=False
+        if x<0:
+            r=False
+        else:
+            while x>0:
+                a=x%10
+                sum=sum*10+a
+                x=x//10
+            print(sum)
+        if (temp==sum):
+            r=True
+        return r
+obj1=Solution()
+print(obj1.isPalindrome(-121))

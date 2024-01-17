@@ -1,0 +1,19 @@
+def bs(nums, target):
+    temp=nums[0]
+    c=0
+    r=-1
+    for a in range(0,len(nums)):
+        if temp>nums[a]:
+            temp=nums[a]
+            c=a
+    for i in range(0,c):
+        if (nums[i]==target):
+            r=i
+    for i in range(c,len(nums)):
+        if (nums[i]==target):
+            r=i
+    return r
+nums=[11,12,15,18,0,1,2]
+target=2
+print(bs(nums,target))
+  
